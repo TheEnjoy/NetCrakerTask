@@ -57,3 +57,8 @@ netcrakertask
 4. css
 5. linkText
 6. partialLinkText
+
+## Пример работы программы:
+
+<a href="https://ibb.co/M6ZRVvK"><img src="https://i.ibb.co/RyYC0Ft/net5.gif" alt="net5" border="0"></a>
+
