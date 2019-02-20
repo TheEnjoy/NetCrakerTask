@@ -24,7 +24,7 @@ netcrakertask
   close_browser
   ```
   
-  ##Как правильно формировать файл keywords.csv:
+  ## Как правильно формировать файл keywords.csv:
   
   Action,Locator Type,Locator Value,setValue, PATH....
   
@@ -36,7 +36,7 @@ netcrakertask
   
   
   
-  ##Описание команд:
+  ## Описание команд:
  - open_browser - открывает браузер
  - open_url – переходит на указанный URL
  - click_element – Выполняет нажатие элемента на странице (в качестве параметра
