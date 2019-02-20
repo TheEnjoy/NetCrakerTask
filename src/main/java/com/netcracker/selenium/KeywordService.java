@@ -41,9 +41,6 @@ public class KeywordService {
             System.setProperty("webdriver.chrome.driver", properties.getProperty("chrome.path"));
             driver = new ChromeDriver();
         }
-//            else if (browserName.equalsIgnoreCase("IE")) {
-//                driver = new InternetExplorerDriver();
-//            }
     }
 
     public void openUrl(String url) {
@@ -114,29 +111,13 @@ public class KeywordService {
         wait = new WebDriverWait(driver,2);
         By locator = locatorValue(locatorType, value);
         Boolean isPresent = driver.findElements(locator).size() > 0;
-       // if(isPresent){
-       //     return  System.out.println("");
-      //  }
-       // return element != null;
         return isPresent;
     }
 
     public void takeSnapShot(String fileWithPath) throws Exception{
-
-        //Convert web driver object to TakeScreenshot
-
         TakesScreenshot scrShot =((TakesScreenshot)driver);
-
-        //Call getScreenshotAs method to create image file
-
         File srcFile=scrShot.getScreenshotAs(OutputType.FILE);
-
-        //Move image file to new destination
-
         File destFile=new File(fileWithPath);
-
-        //Copy file at destination
-
         FileUtils.copyFile(srcFile, destFile);
 
     }
